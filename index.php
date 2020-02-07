@@ -10,7 +10,7 @@ echo $HTML_Code='<!DOCTYPE html>
     <title>Задание 1</title>
 </head>
 <body>
-<h1>Заголовок</h1>
+<h1>Заголовок 2</h1>
 <div>2020</div>
 </body>
 </html>';
