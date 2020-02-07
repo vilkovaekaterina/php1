@@ -6,7 +6,7 @@ var_dump((int)'012345');     // 12345, т.к. 0 считается не знач
 var_dump((float)123.0 === (int)123.0); //  false, т.к. сравнение по типу данных. float != int
 var_dump((int)0 === (int)'hello, world'); //  true, т.к. сравнение по типу данных. int = int
 
-echo '<br>Задание со звездочкой<br>';
+echo '<br><h1>Задание со звездочкой</h1><br>';
 echo 'a='.$a = 1;
 echo '<br>';
 echo 'b='.$b = 4;
