@@ -7,21 +7,21 @@ return [
         'logPath' => ROOT . "/data/logs",
         'templatesPath' => ROOT . '/templates',
 
+        'imagesUrl' => '/images',
+        'imagesPath' => 'images',
+
         'assets' => [
             'css' => [
                 '/css/bootstrap.min.css',
+                '/css/jquery.fancybox.min.css',
                 '/css/style.css',
             ],
             'js' => [
                 '/js/vendor/jquery-3.3.1.min.js',
                 '/js/vendor/popper.min.js',
                 '/js/vendor/bootstrap.min.js',
+                '/js/vendor/jquery.fancybox.min.js',
                 '/js/app.js',
-            ],
-            'img' => [
-                '/img/1.jpg',
-                '/img/2.jpg',
-                '/img/3.jpg',
             ],
         ],
     ]

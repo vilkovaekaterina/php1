@@ -1,2 +1,9 @@
 <?php
-return [];
+return [
+    'db' => [
+        'host' => 'localhost',
+        'user' => 'root',
+        'password' => null,
+        'database' => 'gb',
+    ]
+]; 
