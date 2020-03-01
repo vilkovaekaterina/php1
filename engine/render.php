@@ -13,12 +13,12 @@
  *
  * @return string HTML-код готового шаблона
  */
-function render(string $template, array $data = [], bool $withLayout = true, string $layout = 'all') {
+function render(string $template, array $data = [], bool $withLayout = true, string $layout = 'main') {
     global $config;
 
     // путь к шаблонам
     $templates = [
-        'gallery' => "{$config['app']['templatesPath']}/gallery/{$layout}.php",
+        'layout' => "{$config['app']['templatesPath']}/layouts/{$layout}.php",
         'page' => "{$config['app']['templatesPath']}/{$template}.php"
     ];
 
@@ -31,7 +31,8 @@ function render(string $template, array $data = [], bool $withLayout = true, str
     // подключаем основной макет, если $withLayout
     if ($withLayout) {
         $data['content'] = $pageView;
-        return getTemplateContent($templates['gallery'], $data);
+
+        return getTemplateContent($templates['layout'], $data);
     } else {
         // выводим просто страницу
         return $pageView;

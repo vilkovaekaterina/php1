@@ -8,14 +8,14 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $config['name'] ?></title>
-<link rel="shortcut icon" href="/img/logo.png">
+<link rel="shortcut icon" href="/images/logo.png">
 
 <?php foreach ($config['assets']['css'] as $file) { ?>
     <link rel="stylesheet" href="<?= $file ?>">
 <?php } ?>
 </head>
 <body>
-<?//= render('widgets/navbar', [], false) ?>
+<?= render('widgets/navbar', [], false) ?>
 
 <div class="container">
     <div class="py-3">
@@ -26,5 +26,6 @@
 <?php foreach ($config['assets']['js'] as $file) : ?>
     <script src="<?= $file ?>"></script>
 <?php endforeach; ?>
+
 </body>
 </html>
